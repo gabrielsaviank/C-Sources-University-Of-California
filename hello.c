@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-int main (void)
+#define PI 3.14159
+
+int main()
 {
-    float a, b, sum; 
-    printf( "Input three floats: ");
-    scanf("%f%f", &a, &b);
-    printf("a = %f, b = %f\n", a, b);
-    sum = a + b;
-    printf("sum = %f\n\n", sum);
+    double area = 0.0, radius = 0.0;
+    printf("Enter radius: ");
+    scanf("%lf", &radius);
+    area = PI * radius * radius;
+    printf("radius of %lf meters; area is %lf sq. meters\n", radius, area);
     return 0;
 }
